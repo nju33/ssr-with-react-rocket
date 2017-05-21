@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "dev": "nodemon --exec 'node -r babel-register src/index.js'"
+  },
+  "dependencies": {
+    "kcors": "2",
+    "koa": "^2.2.0",
+    "koa-logger": "^3.0.0",
+    "koa-router": "^7.1.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router": "^4.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-module-alias": "^1.6.0",
+    "babel-preset-env": "^1.5.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "nodemon": "^1.11.0"
+  }
+}

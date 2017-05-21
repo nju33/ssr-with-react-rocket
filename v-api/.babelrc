@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["env", [
+      {"targets": {"node": 7}}
+    ]],
+    "react"
+  ],
+  "plugins": [
+    ["module-alias", [
+      {"src": "./src/renderers/", "expose": "renderers"},
+      {"src": "./src/routers/", "expose": "routers"},
+      {"src": "../common/components/", "expose": "components"}
+    ]]
+  ]
+}
