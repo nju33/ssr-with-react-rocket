@@ -2,7 +2,8 @@
   "scripts": {
     "webpack": "MC_PORT=8000 V_PORT=8100 webpack-dev-server",
     "api": "json-server src/dev-api.js --port 8000",
-    "dev": "concurrently --names 'Webpack,API' --prefix name --prefix-colors 'blue,red' 'yarn webpack' 'yarn api'"
+    "dev": "concurrently --names 'Webpack,API' --prefix name --prefix-colors 'blue,red' 'yarn webpack' 'yarn api'",
+    "build": "MC_PORT=8000 V_PORT=8100 webpack --progress"
   },
   "devDependencies": {
     "babel-loader": "^7.0.0",

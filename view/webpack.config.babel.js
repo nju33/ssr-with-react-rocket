@@ -10,7 +10,7 @@ export default {
     ]
   },
   output: {
-    path: path.join(__dirname, '../mc-api/templates/'),
+    path: path.join(__dirname, '../mc-api/statics/'),
     filename: '[name].js'
   },
   resolve: {
@@ -55,7 +55,7 @@ export default {
         'MC_PORT': JSON.stringify(process.env.MC_PORT)
       }
     }),
-    new HtmlWebpackPlugin({template: 'src/index.pug'}),
+    new HtmlWebpackPlugin({template: 'src/index.pug', filename: 'index.html'}),
     new HtmlWebpackPlugin({template: 'src/index.pug', filename: 'tasks.html'})
   ]
 }
