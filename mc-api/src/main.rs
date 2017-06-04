@@ -36,8 +36,9 @@ fn main() {
             api::tasks::show
         ])
         .mount("/", routes![
+            statics::files,
             statics::index,
-            statics::files
+            statics::dirs
         ])
         .launch();
 }
