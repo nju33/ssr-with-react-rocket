@@ -55,7 +55,15 @@ export default {
         'MC_PORT': JSON.stringify(process.env.MC_PORT)
       }
     }),
-    new HtmlWebpackPlugin({template: 'src/index.pug', filename: 'index.html'}),
-    new HtmlWebpackPlugin({template: 'src/index.pug', filename: 'tasks.html'})
+    new HtmlWebpackPlugin({
+      template: 'src/index.pug',
+      inject: false,
+      filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/index.pug',
+      inject: false,
+      filename: 'tasks.html'
+    })
   ]
 }

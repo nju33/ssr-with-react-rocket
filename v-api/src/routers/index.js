@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import KoaRouter from 'koa-router';
 import React from 'react';
 import {renderToString} from 'react-dom/server';
@@ -6,7 +7,7 @@ import {
   Route
 } from 'react-router';
 import Index from 'components/index/index';
-import Hello from 'components/index/hello';
+import Tasks from 'components/index/tasks';
 
 const router = new KoaRouter();
 
@@ -15,7 +16,7 @@ router.get('/', (ctx, next) => {
     <Router location={'/'} context={{}}>
       <div>
         <Route exact path="/" component={Index}/>
-        <Route exact path="/hello" component={Hello}/>
+        <Route exact path="/tasks" component={Tasks}/>
       </div>
     </Router>
   );
