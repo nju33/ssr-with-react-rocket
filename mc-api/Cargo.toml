@@ -4,9 +4,9 @@ name = "api"
 version = "0.1.0"
 
 [dependencies]
-rocket = "0.2.6"
-rocket_codegen = "0.2.6"
-rocket_contrib = {version = "0.2.6", features = ["handlebars_templates"]}
+rocket = "0.2.8"
+rocket_codegen = "0.2.8"
+rocket_contrib = {version = "0.2.8", features = ["handlebars_templates"]}
 # }
 serde = "1.0.7"
 serde_derive = "1.0.7"
